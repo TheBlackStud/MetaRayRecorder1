@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	"archiveVersion" = "1";
+	"classes" = {
+	};
+	"objectVersion" = "56";
+	"objects" = {
+		"E55563309AEFB0AFA7044686" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "MetaRayRecorder/Core/RecordingTypes.swift";
+			"sourceTree" = "<group>";
+		};
+		"7F139AFAFD5ACFB927E8F7D4" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "MetaRayRecorder/MetaRayRecorderApp.swift";
+			"sourceTree" = "<group>";
+		};
+		"623FFF9F32A1E795245BE48F" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "MetaRayRecorder/RecorderModel.swift";
+			"sourceTree" = "<group>";
+		};
+		"DA7407E102A688A2CF845705" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "MetaRayRecorder/Services/BluetoothMicrophone.swift";
+			"sourceTree" = "<group>";
+		};
+		"66197A56A8D664FD094A3F89" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "MetaRayRecorder/Services/ClipLibrary.swift";
+			"sourceTree" = "<group>";
+		};
+		"9337C003019F0F317D2506EC" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "MetaRayRecorder/Services/MovieWriter.swift";
+			"sourceTree" = "<group>";
+		};
+		"6D30895F330739DD1B35AA1E" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "MetaRayRecorder/Services/PreviewPump.swift";
+			"sourceTree" = "<group>";
+		};
+		"8057DDFF273F115A6A263A20" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "MetaRayRecorder/Views/LibraryView.swift";
+			"sourceTree" = "<group>";
+		};
+		"0F24FAE5F7C8DEFC86C3F3BC" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "MetaRayRecorder/Views/RecorderSettings.swift";
+			"sourceTree" = "<group>";
+		};
+		"A1DB38C4C14A095F4B0F4EEE" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "MetaRayRecorder/Views/RecorderView.swift";
+			"sourceTree" = "<group>";
+		};
+		"9A89B1842154D411DADAE682" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "E55563309AEFB0AFA7044686";
+		};
+		"A5C676A7E0C2EEFB6A498D83" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "7F139AFAFD5ACFB927E8F7D4";
+		};
+		"21549F8DDB398895EC99652B" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "623FFF9F32A1E795245BE48F";
+		};
+		"FC9D79F7DA5A102150A70D81" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "DA7407E102A688A2CF845705";
+		};
+		"41BF710D45FDF86F01B5B1C7" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "66197A56A8D664FD094A3F89";
+		};
+		"0B3A028539E9DEEC34B74E85" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "9337C003019F0F317D2506EC";
+		};
+		"A28C9028202215A29C1F9462" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "6D30895F330739DD1B35AA1E";
+		};
+		"97DFCE383E7BC5D6FB29CAC2" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "8057DDFF273F115A6A263A20";
+		};
+		"FB3972799CDB89A3FD61FD9B" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "0F24FAE5F7C8DEFC86C3F3BC";
+		};
+		"64094A7DA2914B372BAD7818" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "A1DB38C4C14A095F4B0F4EEE";
+		};
+		"1C8578A93E57DD10270F12FB" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "folder.assetcatalog";
+			"path" = "MetaRayRecorder/Resources/Assets.xcassets";
+			"sourceTree" = "<group>";
+		};
+		"C9337AD610E60CCD975875B1" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.plist.xml";
+			"path" = "MetaRayRecorder/Resources/Info.plist";
+			"sourceTree" = "<group>";
+		};
+		"81F31879437340D5CD6ED968" = {
+			"isa" = "PBXFileReference";
+			"explicitFileType" = "wrapper.application";
+			"includeInIndex" = "0";
+			"path" = "MetaRayRecorder.app";
+			"sourceTree" = "BUILT_PRODUCTS_DIR";
+		};
+		"70F09BF32F6D77A92FF191B4" = {
+			"isa" = "PBXFileReference";
+			"explicitFileType" = "wrapper.cfbundle";
+			"includeInIndex" = "0";
+			"path" = "MetaRayRecorderTests.xctest";
+			"sourceTree" = "BUILT_PRODUCTS_DIR";
+		};
+		"65CEFBF50C55AA0D5B40585B" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "Tests/RecorderTests.swift";
+			"sourceTree" = "<group>";
+		};
+		"B4A4A11FFA10163A72472B89" = {
+			"isa" = "XCRemoteSwiftPackageReference";
+			"repositoryURL" = "https://github.com/facebook/meta-wearables-dat-ios";
+			"requirement" = {
+				"kind" = "exactVersion";
+				"version" = "1.0.0";
+			};
+		};
+		"1524695DE6A03DF1BBC4177F" = {
+			"isa" = "XCSwiftPackageProductDependency";
+			"package" = "B4A4A11FFA10163A72472B89";
+			"productName" = "MWDATCore";
+		};
+		"B988BFFBF0B82B87ADACD2C8" = {
+			"isa" = "PBXBuildFile";
+			"productRef" = "1524695DE6A03DF1BBC4177F";
+		};
+		"1D121C4B7B6EAA40F1AC2072" = {
+			"isa" = "XCSwiftPackageProductDependency";
+			"package" = "B4A4A11FFA10163A72472B89";
+			"productName" = "MWDATCamera";
+		};
+		"44F45529DF9FFE68ECD1AFF3" = {
+			"isa" = "PBXBuildFile";
+			"productRef" = "1D121C4B7B6EAA40F1AC2072";
+		};
+		"E44143E0483E1C4AC08E47AE" = {
+			"isa" = "PBXSourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+				"9A89B1842154D411DADAE682",
+				"A5C676A7E0C2EEFB6A498D83",
+				"21549F8DDB398895EC99652B",
+				"FC9D79F7DA5A102150A70D81",
+				"41BF710D45FDF86F01B5B1C7",
+				"0B3A028539E9DEEC34B74E85",
+				"A28C9028202215A29C1F9462",
+				"97DFCE383E7BC5D6FB29CAC2",
+				"FB3972799CDB89A3FD61FD9B",
+				"64094A7DA2914B372BAD7818",
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"014E5B8F299595CD7137E5E4" = {
+			"isa" = "PBXFrameworksBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+				"B988BFFBF0B82B87ADACD2C8",
+				"44F45529DF9FFE68ECD1AFF3",
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"999FF37E9C5A0FFB78E1CDE2" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "1C8578A93E57DD10270F12FB";
+		};
+		"4628612439DB78A41065DA49" = {
+			"isa" = "PBXResourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+				"999FF37E9C5A0FFB78E1CDE2",
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"028E221CE0E9884F366F3E07" = {
+			"isa" = "PBXCopyFilesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"dstPath" = "";
+			"dstSubfolderSpec" = "10";
+			"files" = (
+			);
+			"name" = "Embed Frameworks";
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"75FECC993A01A8C426D3EC3D" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "65CEFBF50C55AA0D5B40585B";
+		};
+		"420F181E4176A26C42646D7E" = {
+			"isa" = "PBXSourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+				"75FECC993A01A8C426D3EC3D",
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"FA850513C6B185E3BAE009D8" = {
+			"isa" = "PBXBuildFile";
+			"productRef" = "1524695DE6A03DF1BBC4177F";
+		};
+		"A495092D04DB4F3360022763" = {
+			"isa" = "PBXBuildFile";
+			"productRef" = "1D121C4B7B6EAA40F1AC2072";
+		};
+		"FE2D9B3DCAAB3378CAFCA5DC" = {
+			"isa" = "PBXFrameworksBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+				"FA850513C6B185E3BAE009D8",
+				"A495092D04DB4F3360022763",
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"2B23A31EEC75B029432F2445" = {
+			"isa" = "XCBuildConfiguration";
+			"buildSettings" = {
+				"SDKROOT" = "iphoneos";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "17.2";
+				"SWIFT_VERSION" = "5.0";
+				"SWIFT_STRICT_CONCURRENCY" = "minimal";
+				"CLANG_ENABLE_MODULES" = "YES";
+				"CLANG_ENABLE_OBJC_ARC" = "YES";
+				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
+				"GCC_C_LANGUAGE_STANDARD" = "gnu17";
+				"CLANG_CXX_LANGUAGE_STANDARD" = "gnu++20";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"TARGETED_DEVICE_FAMILY" = "1";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"SUPPORTS_MACCATALYST" = "NO";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"ENABLE_TESTABILITY" = "YES";
+				"ONLY_ACTIVE_ARCH" = "YES";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG";
+			};
+			"name" = "Debug";
+		};
+		"07CA1E69F6068DEA30A4DA6B" = {
+			"isa" = "XCBuildConfiguration";
+			"buildSettings" = {
+				"SDKROOT" = "iphoneos";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "17.2";
+				"SWIFT_VERSION" = "5.0";
+				"SWIFT_STRICT_CONCURRENCY" = "minimal";
+				"CLANG_ENABLE_MODULES" = "YES";
+				"CLANG_ENABLE_OBJC_ARC" = "YES";
+				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
+				"GCC_C_LANGUAGE_STANDARD" = "gnu17";
+				"CLANG_CXX_LANGUAGE_STANDARD" = "gnu++20";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"TARGETED_DEVICE_FAMILY" = "1";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"SUPPORTS_MACCATALYST" = "NO";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+				"SWIFT_COMPILATION_MODE" = "wholemodule";
+				"ONLY_ACTIVE_ARCH" = "NO";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf-with-dsym";
+			};
+			"name" = "Release";
+		};
+		"AA9B1D3BE1353EBD76471D11" = {
+			"isa" = "XCBuildConfiguration";
+			"buildSettings" = {
+				"PRODUCT_BUNDLE_IDENTIFIER" = "fr.personal.metarayrecorder";
+				"PRODUCT_NAME" = "$(TARGET_NAME)";
+				"INFOPLIST_FILE" = "MetaRayRecorder/Resources/Info.plist";
+				"GENERATE_INFOPLIST_FILE" = "NO";
+				"MARKETING_VERSION" = "1.1.0";
+				"CURRENT_PROJECT_VERSION" = "2";
+				"ASSETCATALOG_COMPILER_APPICON_NAME" = "AppIcon";
+				"ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES" = "YES";
+				"LD_RUNPATH_SEARCH_PATHS" = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"DEVELOPMENT_TEAM" = "";
+				"META_APP_ID" = "";
+				"CLIENT_TOKEN" = "";
+				"ENABLE_PREVIEWS" = "YES";
+			};
+			"name" = "Debug";
+		};
+		"1E2E67F111F111E446D58E6C" = {
+			"isa" = "XCBuildConfiguration";
+			"buildSettings" = {
+				"PRODUCT_BUNDLE_IDENTIFIER" = "fr.personal.metarayrecorder";
+				"PRODUCT_NAME" = "$(TARGET_NAME)";
+				"INFOPLIST_FILE" = "MetaRayRecorder/Resources/Info.plist";
+				"GENERATE_INFOPLIST_FILE" = "NO";
+				"MARKETING_VERSION" = "1.1.0";
+				"CURRENT_PROJECT_VERSION" = "2";
+				"ASSETCATALOG_COMPILER_APPICON_NAME" = "AppIcon";
+				"ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES" = "YES";
+				"LD_RUNPATH_SEARCH_PATHS" = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"DEVELOPMENT_TEAM" = "";
+				"META_APP_ID" = "";
+				"CLIENT_TOKEN" = "";
+				"ENABLE_PREVIEWS" = "YES";
+			};
+			"name" = "Release";
+		};
+		"E34EE53A3E62A34779B371CD" = {
+			"isa" = "XCBuildConfiguration";
+			"buildSettings" = {
+				"PRODUCT_BUNDLE_IDENTIFIER" = "fr.personal.metarayrecorder.tests";
+				"PRODUCT_NAME" = "$(TARGET_NAME)";
+				"GENERATE_INFOPLIST_FILE" = "YES";
+				"BUNDLE_LOADER" = "$(TEST_HOST)";
+				"TEST_HOST" = "$(BUILT_PRODUCTS_DIR)/MetaRayRecorder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MetaRayRecorder";
+				"LD_RUNPATH_SEARCH_PATHS" = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+			};
+			"name" = "Debug";
+		};
+		"E97F71539C04187DB94DC132" = {
+			"isa" = "XCBuildConfiguration";
+			"buildSettings" = {
+				"PRODUCT_BUNDLE_IDENTIFIER" = "fr.personal.metarayrecorder.tests";
+				"PRODUCT_NAME" = "$(TARGET_NAME)";
+				"GENERATE_INFOPLIST_FILE" = "YES";
+				"BUNDLE_LOADER" = "$(TEST_HOST)";
+				"TEST_HOST" = "$(BUILT_PRODUCTS_DIR)/MetaRayRecorder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MetaRayRecorder";
+				"LD_RUNPATH_SEARCH_PATHS" = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+			};
+			"name" = "Release";
+		};
+		"6605C10F6C8F6BC76033835A" = {
+			"isa" = "PBXContainerItemProxy";
+			"containerPortal" = "244210E48437B6556980A702";
+			"proxyType" = "1";
+			"remoteGlobalIDString" = "8C1A045E96B998B40533C7FF";
+			"remoteInfo" = "MetaRayRecorder";
+		};
+		"60356F681D31A06D546741DC" = {
+			"isa" = "PBXTargetDependency";
+			"target" = "8C1A045E96B998B40533C7FF";
+			"targetProxy" = "6605C10F6C8F6BC76033835A";
+		};
+		"7FA7C6DD60DC323C7F3FA76C" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = (
+				"AA9B1D3BE1353EBD76471D11",
+				"1E2E67F111F111E446D58E6C",
+			);
+			"defaultConfigurationIsVisible" = "0";
+			"defaultConfigurationName" = "Release";
+		};
+		"8C1A045E96B998B40533C7FF" = {
+			"isa" = "PBXNativeTarget";
+			"name" = "MetaRayRecorder";
+			"productName" = "MetaRayRecorder";
+			"productType" = "com.apple.product-type.application";
+			"productReference" = "81F31879437340D5CD6ED968";
+			"buildConfigurationList" = "7FA7C6DD60DC323C7F3FA76C";
+			"buildPhases" = (
+				"E44143E0483E1C4AC08E47AE",
+				"014E5B8F299595CD7137E5E4",
+				"4628612439DB78A41065DA49",
+				"028E221CE0E9884F366F3E07",
+			);
+			"buildRules" = (
+			);
+			"dependencies" = (
+			);
+			"packageProductDependencies" = (
+				"1524695DE6A03DF1BBC4177F",
+				"1D121C4B7B6EAA40F1AC2072",
+			);
+		};
+		"3AC24B37B5C6634D049790CE" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = (
+				"E34EE53A3E62A34779B371CD",
+				"E97F71539C04187DB94DC132",
+			);
+			"defaultConfigurationIsVisible" = "0";
+			"defaultConfigurationName" = "Release";
+		};
+		"2ADDEE89B29C55E11126D89F" = {
+			"isa" = "PBXNativeTarget";
+			"name" = "MetaRayRecorderTests";
+			"productName" = "MetaRayRecorderTests";
+			"productType" = "com.apple.product-type.bundle.unit-test";
+			"productReference" = "70F09BF32F6D77A92FF191B4";
+			"buildConfigurationList" = "3AC24B37B5C6634D049790CE";
+			"buildPhases" = (
+				"420F181E4176A26C42646D7E",
+				"FE2D9B3DCAAB3378CAFCA5DC",
+			);
+			"buildRules" = (
+			);
+			"dependencies" = (
+				"60356F681D31A06D546741DC",
+			);
+			"packageProductDependencies" = (
+				"1524695DE6A03DF1BBC4177F",
+				"1D121C4B7B6EAA40F1AC2072",
+			);
+		};
+		"085ED06E573690BA3A56BC1E" = {
+			"isa" = "PBXGroup";
+			"name" = "MetaRayRecorder";
+			"children" = (
+				"E55563309AEFB0AFA7044686",
+				"7F139AFAFD5ACFB927E8F7D4",
+				"623FFF9F32A1E795245BE48F",
+				"DA7407E102A688A2CF845705",
+				"66197A56A8D664FD094A3F89",
+				"9337C003019F0F317D2506EC",
+				"6D30895F330739DD1B35AA1E",
+				"8057DDFF273F115A6A263A20",
+				"0F24FAE5F7C8DEFC86C3F3BC",
+				"A1DB38C4C14A095F4B0F4EEE",
+				"1C8578A93E57DD10270F12FB",
+				"C9337AD610E60CCD975875B1",
+			);
+			"sourceTree" = "<group>";
+		};
+		"D60409337774CCE94860379A" = {
+			"isa" = "PBXGroup";
+			"name" = "Tests";
+			"children" = (
+				"65CEFBF50C55AA0D5B40585B",
+			);
+			"sourceTree" = "<group>";
+		};
+		"6F7199ED7B63CDA338A0FB82" = {
+			"isa" = "PBXGroup";
+			"name" = "Products";
+			"children" = (
+				"81F31879437340D5CD6ED968",
+				"70F09BF32F6D77A92FF191B4",
+			);
+			"sourceTree" = "<group>";
+		};
+		"CC5D242D023A9271190EA7C6" = {
+			"isa" = "PBXGroup";
+			"children" = (
+				"085ED06E573690BA3A56BC1E",
+				"D60409337774CCE94860379A",
+				"6F7199ED7B63CDA338A0FB82",
+			);
+			"sourceTree" = "<group>";
+		};
+		"1922B098E983995960BE56B0" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = (
+				"2B23A31EEC75B029432F2445",
+				"07CA1E69F6068DEA30A4DA6B",
+			);
+			"defaultConfigurationIsVisible" = "0";
+			"defaultConfigurationName" = "Release";
+		};
+		"244210E48437B6556980A702" = {
+			"isa" = "PBXProject";
+			"attributes" = {
+				"LastUpgradeCheck" = "2640";
+				"BuildIndependentTargetsInParallel" = "YES";
+				"TargetAttributes" = {
+					"8C1A045E96B998B40533C7FF" = {
+						"CreatedOnToolsVersion" = "26.4";
+					};
+					"2ADDEE89B29C55E11126D89F" = {
+						"CreatedOnToolsVersion" = "26.4";
+						"TestTargetID" = "8C1A045E96B998B40533C7FF";
+					};
+				};
+			};
+			"buildConfigurationList" = "1922B098E983995960BE56B0";
+			"compatibilityVersion" = "Xcode 14.0";
+			"developmentRegion" = "fr";
+			"knownRegions" = (
+				"fr",
+				"Base",
+			);
+			"hasScannedForEncodings" = "0";
+			"mainGroup" = "CC5D242D023A9271190EA7C6";
+			"productRefGroup" = "6F7199ED7B63CDA338A0FB82";
+			"projectDirPath" = "";
+			"projectRoot" = "";
+			"targets" = (
+				"8C1A045E96B998B40533C7FF",
+				"2ADDEE89B29C55E11126D89F",
+			);
+			"packageReferences" = (
+				"B4A4A11FFA10163A72472B89",
+			);
+		};
+	};
+	"rootObject" = "244210E48437B6556980A702";
+}

@@ -1,0 +1,18 @@
+{
+  "source_delivery": "MetaRay Recorder complete project v1.1.0",
+  "checked_on": "2026-10-09",
+  "sdk_dependency": "Meta Wearables DAT 1.0.0",
+  "local_checks": {
+    "swift_frontend_syntax": "passed",
+    "portable_swift_core_tests": "passed",
+    "background_and_capture_pipeline_preflight": "passed",
+    "python_and_bash_syntax": "passed",
+    "plist_project_json_and_xml": "passed"
+  },
+  "prior_project_compiled_on_github": "yes, user provided successful workflow screenshot for earlier version",
+  "current_release_compiled_on_macos": "not tested here",
+  "current_release_installed_on_iphone": "not tested here",
+  "locked_phone_real_recording": "not tested on hardware",
+  "glasses_capture_button_control": "not implemented (SDK experimental/approval)",
+  "ipa_included": false
+}

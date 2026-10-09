@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MetaRay Recorder — Installation depuis Windows</title>
+<style>
+:root{color-scheme:dark;--bg:#111316;--panel:#1b1e23;--line:#333840;--text:#f4f5f6;--muted:#bcc2ca;--red:#ff5266;--light:#ffbac3}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}main{max-width:980px;margin:auto;padding:50px 26px 70px}header{border-bottom:1px solid var(--line);padding-bottom:28px;margin-bottom:28px}.brand{letter-spacing:.2em;font-size:13px;font-weight:800;color:var(--muted)}h1{font-size:clamp(32px,5vw,48px);line-height:1.15;letter-spacing:-.04em;margin:20px 0 18px}h2{font-size:24px;line-height:1.3;margin:0 0 14px}h3{font-size:17px;margin:18px 0 6px}p{margin:12px 0}.muted,small{color:var(--muted)}strong{font-weight:700}a{color:var(--light);text-underline-offset:3px}a:hover{color:#fff}code{background:#0d0f11;border:1px solid var(--line);padding:2px 6px;border-radius:5px;font-family:Consolas,monospace;font-size:.9em;overflow-wrap:anywhere}pre{white-space:pre-wrap;background:#101215;padding:18px;border-radius:12px;overflow:auto;font:14px/1.6 Consolas,monospace}section{margin:20px 0;padding:26px;background:var(--panel);border:1px solid var(--line);border-radius:18px}.notice{border-left:4px solid var(--red);background:#241b20;padding:18px 20px;border-radius:0 12px 12px 0;margin:22px 0}.step{display:inline-flex;width:34px;height:34px;background:var(--red);color:#130c0e;align-items:center;justify-content:center;font-weight:900;border-radius:10px;margin-right:10px;vertical-align:2px;font-size:18px}.flow{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0 4px}.flow span{background:#262a30;border:1px solid #414751;border-radius:30px;padding:7px 13px;font-size:13px}.button{display:inline-block;margin:8px 8px 8px 0;padding:10px 16px;background:#343a44;border:1px solid #505a68;color:white;text-decoration:none;border-radius:10px;font-weight:600}.button.primary{background:var(--red);border-color:var(--red);color:#14090b}ol{padding-left:23px;margin:10px 0}li{margin:12px 0}.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.grid section{margin:0}footer{padding-top:22px;color:var(--muted);font-size:13px;border-top:1px solid var(--line);margin-top:34px}.label{display:inline-block;border:1px solid #59616f;border-radius:6px;padding:1px 7px;font-size:12px;color:#d8dde4;margin-right:8px}details{margin:12px 0;padding-top:12px;border-top:1px solid var(--line)}summary{cursor:pointer;font-weight:700} @media(max-width:650px){main{padding:28px 16px}section{padding:20px}.grid{grid-template-columns:1fr}h2{font-size:21px}.step{vertical-align:0}}@media print{body{background:white;color:black}main{padding:0}section,.notice{background:white;border-color:#999}a{color:#333}.button{display:none}code,pre{background:#eee;color:black}.muted,small,footer{color:#444}}
+</style>
+</head>
+<body><main>
+<header>
+<div class="brand">METARAY / RECORDER</div>
+<h1>Votre application iPhone.<br>Depuis votre PC Windows.</h1>
+<p class="muted">Code intégré pour Ray-Ban Meta · Enregistrement local MP4 · Compte Apple personnel</p>
+<div class="flow"><span>Sources fournies</span><span>Compilation sur macOS</span><span>IPA non signé</span><span>Signature sur votre PC</span></div>
+</header>
+<div class="notice"><strong>Ce dossier n’est pas encore une application installable.</strong><br>
+Le code, le projet Xcode et la chaîne de compilation sont fournis. La compilation iOS et les essais sur vos lunettes n’ont pas été exécutés ici. Le fichier IPA sera créé uniquement si le workflow ci-dessous compile le projet et réussit ses tests. Une correction peut encore être nécessaire lors de cette validation.</div>
+<section>
+<h2><span class="step">1</span>Mettre les fichiers sur GitHub</h2>
+<p>Extrayez complètement le ZIP sur votre PC. Vous n’avez pas besoin d’installer Xcode sur Windows.</p>
+<a class="button primary" href="https://github.com/new" target="_blank" rel="noopener noreferrer">Créer le dépôt GitHub</a>
+<ol>
+<li>Connectez-vous à GitHub, ou créez votre compte. Nommez le dépôt <code>MetaRayRecorder</code>, choisissez <strong>Private</strong>, puis <strong>Create repository</strong>.</li>
+<li>Sur la page du dépôt, choisissez <strong>uploading an existing file</strong> ou <strong>Add file → Upload files</strong>.</li>
+<li>Ouvrez le dossier extrait. Glissez <strong>son contenu</strong> dans la page d’envoi, y compris le dossier <code>.github</code>. N’envoyez pas simplement le ZIP ou le dossier parent contenant tout le projet.</li>
+<li>Validez avec <strong>Commit changes</strong>. Les dossiers ci-dessous doivent apparaître directement à la racine du dépôt.</li>
+</ol>
+<pre>.github/workflows/build-ios.yml
+MetaRayRecorder/
+MetaRayRecorder.xcodeproj/
+Scripts/
+Tests/
+README.md</pre>
+<p class="muted">Avant de compiler, consultez les paramètres de facturation de votre compte GitHub. Un dépôt privé utilise votre quota Actions et peut entraîner des frais si vous autorisez le dépassement. Ce guide ne garantit pas un coût nul. <a href="https://docs.github.com/en/actions/reference/runners/github-hosted-runners" target="_blank" rel="noopener noreferrer">Conditions des runners GitHub</a>.</p>
+</section>
+<section>
+<h2><span class="step">2</span>Faire créer le fichier IPA</h2>
+<ol>
+<li>Dans le dépôt, ouvrez l’onglet <strong>Actions</strong>. Activez les workflows si GitHub vous le demande.</li>
+<li>Sélectionnez <strong>Compiler IPA iPhone</strong>, puis <strong>Run workflow → Run workflow</strong>.</li>
+<li>Ouvrez l’exécution. Un Mac hébergé télécharge le SDK Meta, exécute les tests iOS et compile l’application pour un vrai iPhone.</li>
+<li>Lorsque l’exécution est <strong>verte</strong>, descendez jusqu’à <strong>Artifacts</strong> et téléchargez <strong>MetaRayRecorder-IPA</strong>.</li>
+<li>Extrayez cette nouvelle archive. Le fichier à installer est <code>MetaRayRecorder-unsigned.ipa</code>.</li>
+</ol>
+<p>Le mot <strong>unsigned</strong> signifie « non signé ». La compilation ne nécessite pas votre compte Apple ; celui-ci sera utilisé localement à l’étape suivante.</p>
+<details><summary>L’exécution est rouge ou aucun IPA n’apparaît</summary><p>Ouvrez la première étape en échec. Le code n’a pas passé la compilation ou les tests : il ne faut pas considérer l’application comme validée. Les journaux restent accessibles dans Actions et, si disponibles, dans <code>MetaRayRecorder-diagnostics</code>. Voir <a href="Documentation/DEPANNAGE.md">le dépannage</a>. Aucun téléchargement IPA ne doit être attendu tant que cette étape échoue.</p></details>
+</section>
+<section>
+<h2><span class="step">3</span>Signer et installer sur l’iPhone</h2>
+<p>La méthode proposée utilise <strong>Sideloadly</strong>, un outil tiers pour Windows qui annonce la prise en charge d’un compte Apple gratuit. Téléchargez-le uniquement depuis son éditeur.</p>
+<a class="button primary" href="https://sideloadly.io/" target="_blank" rel="noopener noreferrer">Ouvrir le site Sideloadly</a>
+<ol>
+<li>Installez Sideloadly pour Windows. Son site demande les versions web d’<strong>iTunes et iCloud</strong>, et non celles du Microsoft Store : suivez ses liens et instructions actuels.</li>
+<li>Branchez l’iPhone en USB, déverrouillez-le et acceptez <strong>Faire confiance à cet ordinateur</strong>.</li>
+<li>Ouvrez Sideloadly. Sélectionnez votre iPhone et glissez <code>MetaRayRecorder-unsigned.ipa</code> dans sa fenêtre.</li>
+<li>Renseignez votre compte Apple dans Sideloadly puis lancez <strong>Start</strong>. Terminez l’authentification demandée. Ne placez jamais votre mot de passe, code de validation ou certificat Apple dans GitHub, dans les sources ou dans une conversation.</li>
+<li>Sur l’iPhone, faites confiance à votre profil dans <strong>Réglages → Général → VPN et gestion de l’appareil</strong>, si cela est demandé. Activez aussi <strong>Réglages → Confidentialité et sécurité → Mode développeur</strong> si l’installation l’exige, puis suivez le redémarrage et la confirmation.</li>
+</ol>
+<p><strong>Compte gratuit : la signature expire après 7 jours.</strong> Il faut la renouveler. Sideloadly propose un renouvellement automatique lorsque ses conditions de connexion sont remplies. Gardez le même identifiant d’application et exportez vos vidéos avant toute désinstallation. <a href="https://developer.apple.com/help/account/basics/about-your-developer-account" target="_blank" rel="noopener noreferrer">Limites Apple</a>.</p>
+<p class="muted">La signature de ce projet et sa connexion au SDK Meta après installation n’ont pas encore été testées sur votre appareil. Un IPA compilé ne constitue pas, à lui seul, cette validation.</p>
+</section>
+<section>
+<h2><span class="step">4</span>Connecter les lunettes et filmer</h2>
+<ol>
+<li>Ouvrez l’application officielle <strong>Meta AI</strong> sur l’iPhone, vérifiez que les Gen 2 y sont associées et activez le <strong>mode développeur Meta</strong> dans ses réglages. Ce mode est distinct du mode développeur de l’iPhone.</li>
+<li>Mettez les lunettes. Dans MetaRay Recorder : <strong>1 · Connecter avec Meta AI</strong>, acceptez l’association, puis revenez dans MetaRay.</li>
+<li>Touchez <strong>Démarrer l’enregistrement</strong>. La session et le flux se préparent automatiquement. Autorisez la caméra dans Meta AI si demandé.</li>
+<li>Quand <strong>REC</strong> apparaît, verrouillez l’iPhone. Rouvrez cette application pour toucher <strong>Arrêter et sauvegarder</strong>.</li>
+<li>Pour le premier essai, arrêtez après quelques secondes et vérifiez le fichier dans <strong>Mes vidéos</strong>. Testez ensuite un enregistrement dépassant 5 minutes.</li>
+</ol>
+<h3>Pour enregistrer le son des lunettes</h3>
+<p>Avant d’ouvrir la caméra, allez dans les réglages de MetaRay, activez <strong>Enregistrer le son Bluetooth</strong>, recherchez les micros puis sélectionnez explicitement le port portant le nom de vos Ray-Ban. Le micro de l’iPhone ne sert pas de remplacement. En cas d’absence du port Bluetooth, laissez le son désactivé.</p>
+<h3>Pour retrouver les vidéos</h3>
+<p>Ouvrez <strong>Mes vidéos</strong> pour lire, partager ou ajouter un fichier dans Photos. Les fichiers finalisés sont également dans <strong>Fichiers → Sur mon iPhone → MetaRay Recorder → Enregistrements</strong>.</p>
+</section>
+<div class="grid">
+<section><h2>Ce que le code prévoit</h2><p>Connexion au SDK Meta, aperçu réel, enregistrement H.264/AAC, sauvegarde locale, bibliothèque, partage et export Photos. Pas de minuterie d’arrêt ajoutée à 3 ou 5 minutes.</p><p class="muted">Les files d’encodage sont bornées. Une rupture de flux, un stockage bas ou une température iPhone élevée déclenche l’arrêt et la sauvegarde.</p></section>
+<section><h2>Ce qui n’est pas garanti</h2><p>La durée de 20–60 minutes, l’autonomie et la synchronisation audio/vidéo doivent être testées. Le flux élevé demandé est <strong>720 × 1280, pas 3K natif</strong>, et peut être dégradé par le SDK.</p><p><strong>Le verrouillage ne provoque plus d’arrêt volontaire.</strong> Le SDK Meta peut continuer à livrer les images en arrière-plan ; iOS, le firmware ou les lunettes peuvent néanmoins interrompre la session. Le bouton physique des lunettes n’est pas une commande d’arrêt intégrée. L’arrêt s’effectue dans l’application. Une récupération après arrêt brutal reste une tentative.</p></section>
+</div>
+<footer>
+<span class="label">CODE 1.0.0</span><span class="label">META DAT 1.0.0</span><span class="label">iOS 17.2+</span>
+<p>Projet indépendant de Meta, Ray-Ban et MetaLensAI. Le SDK reste soumis aux conditions de Meta. Les sources et le détail des vérifications sont fournis dans <a href="README.md">README.md</a>, <a href="Documentation/SOURCES.md">SOURCES.md</a> et <a href="Documentation/VALIDATION.md">VALIDATION.md</a>. Documentation vérifiée le 8 octobre 2026.</p>
+</footer>
+</main></body></html>

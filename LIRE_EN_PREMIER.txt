@@ -1,0 +1,24 @@
+METARAY RECORDER 1.1.0 — MISE A JOUR UNIQUE DEPUIS WINDOWS
+
+Ce ZIP contient le PROJET iOS complet, pas un IPA signé.
+La version précédente a été compilée sur GitHub. Cette version enrichie
+n'a pas encore été recompilée ou essayée sur l'iPhone depuis ici.
+
+1. SAUVEGARDER vos vidéos depuis Fichiers sur l’iPhone avant de réinstaller.
+2. Installer GitHub Desktop : https://desktop.github.com/
+3. Dans GitHub Desktop : File > Clone repository > TheBlackStud/MetaRayRecorder.
+4. Copier le CONTENU de ce dossier MetaRayRecorder dans le dossier local du dépôt.
+   Remplacer les fichiers existants ; conserver .git et .github/workflows.
+5. Dans GitHub Desktop : Commit to main, puis Push origin.
+6. Dans GitHub sur le navigateur : Actions > Compiler IPA iPhone > Run workflow.
+7. Si SUCCESS : Artifacts > MetaRayRecorder-IPA > récupérer le ZIP, puis l’IPA.
+8. Signer et installer l’IPA avec la méthode déjà utilisée sur votre iPhone.
+9. Dans l’app : associer Meta AI si nécessaire, puis Démarrer l'enregistrement.
+   Dès que REC est actif : verrouiller l’iPhone, revenir pour Arrêter et sauvegarder.
+
+INTERFACE : l’aperçu vidéo est masqué par défaut ; le flux caméra continue
+néanmoins d’être transmis à l’iPhone pour encoder le fichier.
+
+LIMITE : le bouton physique de capture des Ray-Ban n'est pas géré.
+La continuité vidéo iPhone verrouillé et la durée réelle doivent être validées
+sur votre propre matériel. Une app iOS peut être interrompue par le système.
