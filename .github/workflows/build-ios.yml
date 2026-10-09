@@ -1,0 +1,75 @@
+name: Compiler IPA iPhone
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: metaray-iphone-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  compile:
+    runs-on: macos-26
+    timeout-minutes: 45
+    steps:
+      - name: Recuperer les sources
+        uses: actions/checkout@v4
+
+      - name: Selectionner Xcode
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -d /Applications/Xcode_26.6.app ]]; then
+            XCODE=/Applications/Xcode_26.6.app/Contents/Developer
+          else
+            XCODE=$(python3 - <<'PY'
+          from pathlib import Path
+          import re
+          choices=[]
+          for path in Path('/Applications').glob('Xcode_*.app'):
+              match=re.fullmatch(r'Xcode_(\d+)\.(\d+)(?:\.(\d+))?\.app',path.name)
+              if match:
+                  version=tuple(int(x or 0) for x in match.groups())
+                  if version >= (26,4,0): choices.append((version,path))
+          if not choices: raise SystemExit('Xcode 26.4 or newer is required by Meta DAT 1.0.0.')
+          print(max(choices,key=lambda x:x[0])[1]/'Contents/Developer')
+          PY
+            )
+          fi
+          echo "DEVELOPER_DIR=$XCODE" >> "$GITHUB_ENV"
+          DEVELOPER_DIR="$XCODE" xcodebuild -version
+
+      - name: Verifier le code commun et generer le projet
+        run: |
+          bash Scripts/check_core.sh
+          python3 Scripts/generate_project.py
+          plutil -lint MetaRayRecorder/Resources/Info.plist
+          plutil -lint MetaRayRecorder.xcodeproj/project.pbxproj
+
+      - name: Tests iOS sur simulateur
+        run: bash Scripts/test_ios.sh
+
+      - name: Compiler et creer le vrai IPA non signe
+        run: bash Scripts/build_ipa.sh
+
+      - name: Fournir le fichier IPA
+        uses: actions/upload-artifact@v4
+        with:
+          name: MetaRayRecorder-IPA
+          path: dist/
+          if-no-files-found: error
+          retention-days: 14
+
+      - name: Conserver les journaux en cas de besoin
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: MetaRayRecorder-diagnostics
+          path: |
+            build/*.log
+            build/RecorderTests.xcresult
+          if-no-files-found: ignore
+          retention-days: 7
